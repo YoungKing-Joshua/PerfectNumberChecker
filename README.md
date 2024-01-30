@@ -1,6 +1,7 @@
 # Perfect Number Checker
 
 Welcome to the Perfect Number Checker, a simple web application tool to determine whether a given positive integer is a perfect number or not.
+(URL: https://youngking-joshua.github.io/PerfectNumberChecker/)
 
 ## Problem Statement
 
@@ -23,5 +24,3 @@ A Perfect number is a positive integer that is equal to the sum of its proper di
 Copyright © 2024 by Joshua Dei-alorse
 
 Feel free to explore and use this tool to check for perfect numbers! If you have any questions or feedback, please contact the author.
-
----
