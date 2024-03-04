@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfect Number Checker</title>
+</head>
+<body>
+
+<h1>Perfect Number Checker</h1>
+
+<label for="numberInput">Enter a number:</label>
+<input type="number" id="numberInput">
+<button onclick="checkPerfectNumber()">Check</button>
+
+<p id="result"></p>
+
+<script>
+// Define a class for checking perfect numbers
+class PerfectNumberChecker {
+    constructor(number) {
+        this.number = number;
+        this.sum = 0;
+    }
+
+    // Method to check if the number is perfect
+    isPerfect() {
+        if (this.number <= 1) {
+            return false;
+        }
+
+        // Calculate the sum of proper divisors
+        for (let i = 1; i <= Math.floor(this.number / 2); i++) {
+            if (this.number % i === 0) {
+                this.sum += i;
+            }
+        }
+
+        // Check if the sum of proper divisors equals the number
+        return this.sum === this.number;
+    }
+}
+
+function checkPerfectNumber() {
+    const numberInput = document.getElementById('numberInput').value;
+    const perfectChecker = new PerfectNumberChecker(parseInt(numberInput));
+
+    const resultElement = document.getElementById('result');
+    if (perfectChecker.isPerfect()) {
+        resultElement.textContent = numberInput + " is a perfect number.";
+    } else {
+        resultElement.textContent = numberInput + " is not a perfect number.";
+    }
+}
+</script>
+
+</body>
+</html>
