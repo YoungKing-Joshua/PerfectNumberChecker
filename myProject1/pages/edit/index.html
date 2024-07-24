@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Shipment - Shipping Company Staff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shipping Company</h1>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="edit-shipment">
+                <div class="heading">
+                    <h2>Edit Shipment</h2>
+                </div>
+                <form id="edit-shipment-form">
+                    <div class="form-group">
+                        <label for="shipment-id">Shipment ID</label>
+                        <input type="text" id="shipment-id" name="shipment-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select id="status" name="status" required>
+                            <option value="Pending">Pending</option>
+                            <option value="In Transit">In Transit</option>
+                            <option value="Delivered">Delivered</option>
+                            <option value="Cancelled">Cancelled</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient">Recipient</label>
+                        <input type="text" id="recipient" name="recipient" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="bill-of-lading">Bill of Lading No.</label>
+                        <input type="text" id="bill-of-lading" name="bill-of-lading" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vessel-mmsi">Vessel MMSI</label>
+                        <input type="text" id="vessel-mmsi" name="vessel-mmsi" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="package-weight">Package Weight</label>
+                        <input type="number" id="package-weight" name="package-weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="owner-name">Owner Name</label>
+                        <input type="text" id="owner-name" name="owner-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="port-of-loading">Port of Loading</label>
+                        <input type="text" id="port-of-loading" name="port-of-loading" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="port-of-destination">Port of Destination</label>
+                        <input type="text" id="port-of-destination" name="port-of-destination" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit">Save Changes</button>
+                        <button type="button" id="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shipping Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

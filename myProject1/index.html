@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shipping Tracker</h1>
+            <nav>
+                <ul id="navbar">
+                    <!-- Common Links -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                    <!-- Dropdown Menus -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Customer</a>
+                        <div class="dropdown-content">
+                            <a href="#">Track Package</a>
+                            <a href="#">Profile</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Shipping Company Staff</a>
+                        <div class="dropdown-content">
+                            <a href="#">Update Status</a>
+                            <a href="#">Manage Shipments</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">System</a>
+                        <div class="dropdown-content">
+                            <a href="#">System Dashboard</a>
+                            <a href="#">Logs</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Track Your Shipment</h2>
+            <form class="tracking-form">
+                <input type="text" placeholder="Enter your tracking number" required>
+                <button type="submit">Track</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="container">
+            <div class="feature">
+                <img src="real-time-updates.jpg" alt="Real-Time Updates">
+                <h3>Real-Time Updates</h3>
+                <p>Get real-time tracking information for your shipments.</p>
+            </div>
+            <div class="feature">
+                <img src="reliable-service.jpg" alt="Reliable Service">
+                <h3>Reliable Service</h3>
+                <p>Our service is trusted by thousands of customers worldwide.</p>
+            </div>
+            <div class="feature">
+                <img src="support.jpg" alt="24/7 Support">
+                <h3>24/7 Support</h3>
+                <p>Contact our support team any time, any day.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shipping Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
